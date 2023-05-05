@@ -1,12 +1,11 @@
 import React from "react";
-import "./index.css"
+import "./index.css";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <React.Fragment>
-      <h1 className="text-3xl text-red-600 font-bold underline">
-        Hello world!
-      </h1>
+      <Navbar />
     </React.Fragment>
   );
 }

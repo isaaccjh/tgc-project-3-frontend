@@ -7,11 +7,9 @@ import Logo from "../zerek.png";
 
 export default function Navbar() {
 
-
-
     return (<>
         <nav className="bg-red-400 dark:bg-gray-800 shadow">
-            <div className="flex justify-between p-5 border-2 border-purple-400 items-center align-middle">
+            <div className="flex justify-between p-4 border-2 border-purple-400 items-center align-middle">
                     <Link to="/">Zerek</Link>
                 <div className="flex border-2 border-blue-900">
                     <div className="p-2 bg-yellow-200 ">

@@ -1,25 +1,40 @@
 import "../index.css";
 import { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
-import Logo from "../zerek.png"
+import { Link } from "react-router-dom";
+import { BsCart } from "react-icons/bs"
+import { VscAccount } from "react-icons/vsc"
+import Logo from "../zerek.png";
 
 export default function Navbar() {
+
+
+
     return (<>
-        <nav class="bg-yellow-800 dark:bg-gray-800 shadow ">
-            <div className="flex p-5 border-2 border-purple-400 align-middle">
-                    <a>Zerek</a>
-                <div className="flex border-2 border-blue-900 ml-2">
-                    <div className="p-2">
+        <nav className="bg-red-400 dark:bg-gray-800 shadow">
+            <div className="flex justify-between p-5 border-2 border-purple-400 items-center align-middle">
+                    <Link to="/">Zerek</Link>
+                <div className="flex border-2 border-blue-900">
+                    <div className="p-2 bg-yellow-200 ">
                         <Link to="/">Home</Link>
                     </div>
-                    <div className="p-2">
-                        <Link to="/">Products</Link>
+                    <div className="p-2 bg-yellow-200">
+                        <Link to="/products">Products</Link>
                     </div>
-                    <div className="p-2">
-                        <Link to="/">About Us</Link>
+                    <div className="p-2 bg-yellow-200">
+                        <Link to="/about-us">About Us</Link>
                     </div>
-                    <div className="p-2">
-                        <Link to="/">Contact Us</Link>
+                    <div className="p-2 bg-yellow-200">
+                        <Link to="/contact-us">Contact Us</Link>
+                    </div>
+                </div>
+                <div>
+                    <div className="flex">
+                        <div className="p-2 mr-3">
+                            <button className="scale-[1.5]"><BsCart /></button>
+                        </div>
+                        <div className="p-2 flex mr-2">
+                           <button className="scale-[1.6]"><VscAccount /></button>
+                        </div>
                     </div>
                 </div>
             </div>
